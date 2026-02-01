@@ -92,7 +92,7 @@ const Hero = ({ darkMode }) => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className='lg:w-1/2 w-full max-w-md lg:max-w-lg flex justify-end mt-4 lg:mt-0'>
+          <div className='lg:w-1/2 w-full max-w-md lg:max-w-lg flex justify-end mt-10 lg:mt-6'>
             <div className='relative w-4/5 sm:w-3/4 lg:w-full'>
               <div className='relative overflow-hidden'>
                 <img src={hero} alt='Hero Image' className='w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500' />
