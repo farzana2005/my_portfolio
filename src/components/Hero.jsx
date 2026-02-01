@@ -31,7 +31,7 @@ const Hero = ({ darkMode }) => {
   return (
     <div className='relative overflow-hidden min-h-screen flex flex-col'>
       <section id='home' className='body-font z-10'>
-        <div className='container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-14 pt-24 pb-16 lg:pt-32 lg:pb-24 gap-6'>
+        <div className='container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-14 pt-24 pb-16 lg:pt-32 lg:pb-24 gap-8'>
 
           {/* LEFT CONTENT (TEXT + BUTTONS) */}
           <div className='lg:w-1/2 w-full flex flex-col items-start text-left space-y-4 lg:space-y-6'>
