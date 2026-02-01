@@ -16,14 +16,14 @@ const Hero = ({ darkMode }) => {
     textPrimary: 'text-white',
     textSecondary: 'text-gray-300',
     buttonSecondary: `text-white border-2 border-orange-500 hover:bg-orange-600`,
-    decoractiveCircle: 'bg-orange-500 opacity-10`,
+    decoractiveCircle: 'bg-orange-500 opacity-10',
   };
 
   const lightTheme = {
     textPrimary: 'text-gray-900',
     textSecondary: 'text-gray-700',
     buttonSecondary: `text-gray-900 border-2 border-orange-500 hover:bg-orange-500 hover:text-white`,
-    decoractiveCircle: 'bg-orange-400 opacity-20`,
+    decoractiveCircle: 'bg-orange-400 opacity-20',
   };
 
   const theme = darkMode ? darkTheme : lightTheme;
@@ -31,13 +31,13 @@ const Hero = ({ darkMode }) => {
   return (
     <div className='relative overflow-hidden min-h-screen flex flex-col'>
       <section id='home' data-aos-delay='250' className='body-font z-10'>
-        <div className='container mx-auto flex flex-col lg:flex-row-reverse items-start justify-between px-4 sm:px-8 lg:px-14 py-12 lg:py-20 gap-6'>
+        <div className='container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-14 py-12 lg:py-20 mt-8 lg:mt-16'>
 
-          {/* LEFT CONTENT (TEXT + BUTTONS) */}
-          <div className='lg:w-1/2 w-full flex flex-col items-end text-right mb-4 lg:mb-0'>
+          {/* LEFT CONTENT */}
+          <div className='lg:w-1/2 w-full flex flex-col items-center lg:items-end text-center lg:text-right mb-8 lg:mb-0 lg:order-1'>
 
             {/* Social Icons */}
-            <div className='flex justify-end gap-2 sm:gap-4 mb-4'>
+            <div className='flex justify-center lg:justify-end gap-2 sm:gap-4 mb-6 sm:mb-7 w-full'>
               {socialIcons.map((social, index) => (
                 <a
                   key={index}
@@ -57,39 +57,55 @@ const Hero = ({ darkMode }) => {
             </div>
 
             {/* Heading */}
-            <h1 className={`title-font text-3xl sm:text-4xl lg:text-5xl mb-3 font-bold ${theme.textPrimary}`} data-aos='fade-up' data-aos-delay='500'>
+            <h1
+              className={`title-font text-3xl sm:text-4xl lg:text-5xl mb-4 font-bold ${theme.textPrimary}`}
+              data-aos='fade-up'
+              data-aos-delay='500'
+            >
               hi, i'm Farzana
             </h1>
 
             {/* Paragraph */}
-            <p className={`mb-3 sm:mb-4 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`} data-aos='fade-up' data-aos-delay='600'>
+            <p
+              className={`mb-4 sm:mb-5 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}
+              data-aos='fade-up'
+              data-aos-delay='600'
+            >
               Web Designer & WordPress Developer  <br />
               I build modern, responsive, and high-converting websites.
             </p>
 
-            <p className="mt-2 text-sm sm:text-base text-gray-600 dark:text-gray-300">
+            <p className="mt-4 text-sm sm:text-base text-gray-600 dark:text-gray-300">
              <a href="mailto:arefin683467@gmail.com" className="hover:underline">arefin683467@gmail.com</a> | 
              <a href="tel:+8801881-039182" className="hover:underline">+88 01881-039182</a>
             </p>
 
             {/* BUTTONS */}
-            <div className='w-full pt-3 sm:pt-4'>
-              <div className='flex flex-col sm:flex-row justify-end gap-2 sm:gap-3' data-aos='fade-up' data-aos-delay='700'>
+            <div className='w-full pt-4 sm:pt-6'>
+              <div
+                className='flex flex-col sm:flex-row justify-center lg:justify-end gap-2 sm:gap-3'
+                data-aos='fade-up'
+                data-aos-delay='700'
+              >
                 <a href={CV} download className='w-full sm:w-auto'>
-                  <button className='w-full sm:w-auto inline-flex items-center justify-center
+                  <button
+                    className='w-full sm:w-auto inline-flex items-center justify-center
                     text-white bg-linear-to-r from-orange-500 to-amber-500 border-0
                     py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
-                    rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform'>
+                    rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform'
+                  >
                     <DownloadIcon className='w-4 h-4 sm:w-5 sm:h-5 mr-2' />
                     Download CV
                   </button>
                 </a>
 
                 <a href='#contact' className='w-full sm:w-auto'>
-                  <button className={`w-full sm:w-auto inline-flex items-center justify-center
-                    ${theme.buttonSecondary} py-3 px-6 sm:px-8
-                    hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
-                    rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}>
+                  <button
+                    className={`w-full sm:w-auto inline-flex items-center justify-center
+                    ${theme.buttonSecondary}
+                    py-3 px-6 sm:px-8 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
+                    rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}
+                  >
                     <Mail className='w-4 h-4 sm:w-5 sm:h-5 mr-2' />
                     Contact Me
                   </button>
@@ -99,21 +115,36 @@ const Hero = ({ darkMode }) => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className='lg:w-1/2 w-full max-w-md lg:max-w-lg flex justify-start mt-4 lg:mt-0'>
+          <div
+            className='lg:w-1/2 w-full max-w-md lg:max-w-lg mt-4 lg:mt-0 flex justify-center lg:order-2'
+            data-aos='fade-left'
+            data-aos-delay='400'
+          >
             <div className='relative w-4/5 sm:w-3/4 lg:w-full'>
               <div className='relative overflow-hidden'>
-                <img src={hero} alt='Hero Image' className='w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500' />
+                <img
+                  src={hero}
+                  alt='Hero Image'
+                  className='w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500'
+                />
               </div>
-              <img src={hi} alt='Hi icon' className='absolute -top-4 sm:top-4 left-6 sm:left-20
-                w-14 h-14 sm:w-20 sm:h-20 object-contain animate-bounce opacity-90 z-10' />
+
+              <img
+                src={hi}
+                alt='Hi icon'
+                className='absolute -top-4 sm:top-4 left-6 sm:left-20
+                w-14 h-14 sm:w-20 sm:h-20 object-contain animate-bounce opacity-90 z-10'
+              />
             </div>
           </div>
 
         </div>
 
         {/* Decorative Circle */}
-        <div className={`absolute -top-20 -left-20 w-40 h-40 sm:w-64 sm:h-64 ${theme.decoractiveCircle} rounded-full
-          mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-1000 hidden sm:block`} />
+        <div className={`absolute -top-20 -left-20 w-40 h-40
+        sm:w-64 sm:h-64 ${theme.decoractiveCircle} rounded-full
+        mix-blend-multiply filter blur-3xl opacity-10
+        animate-pulse delay-1000 hidden sm:block`} />
 
       </section>
     </div>
