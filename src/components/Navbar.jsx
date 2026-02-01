@@ -25,7 +25,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   }
 
   const darkColors = {
-    navBg: 'bg-linear-to-br from-gray-700 to-black',
+   // navBg: 'bg-linear-to-br from-gray-700 to-black',
     textPrimary: 'text-white',
     textSecondary: 'text-gray-300',
     textHover: 'text-orange-400',
