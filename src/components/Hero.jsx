@@ -31,10 +31,10 @@ const Hero = ({ darkMode }) => {
   return (
     <div className='relative overflow-hidden min-h-screen flex flex-col'>
       <section id='home' className='body-font z-10'>
-        <div className='container mx-auto flex flex-col lg:flex-row items-start justify-between px-4 sm:px-8 lg:px-14 py-12 lg:py-20 gap-6'>
+        <div className='container mx-auto flex flex-col lg:flex-row items-start justify-between px-4 sm:px-8 lg:px-14 py-12 lg:py-20 gap-3'>
 
           {/* LEFT CONTENT (TEXT + BUTTONS) */}
-          <div className='lg:w-1/2 w-full flex flex-col items-start text-left space-y-6 lg:space-y-6'>
+          <div className='lg:w-1/2 w-full flex flex-col items-start text-left space-y-4 lg:space-y-6'>
 
             {/* Social Icons */}
             <div className='flex justify-start gap-3'>
