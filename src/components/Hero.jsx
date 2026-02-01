@@ -1,4 +1,3 @@
-
 import github from '../assets/github.png'
 import facebook from '../assets/facebook.png'
 import CV from '../assets/CV.pdf'
@@ -9,7 +8,6 @@ import hi from '../assets/hi.png'
 const Hero = ({ darkMode }) => {
 
   const socialIcons = [
-   
     { icon: github, alt: 'github', url: 'https://github.com/farzana2005' },
     { icon: facebook, alt: 'facebook', url: 'https://www.facebook.com/farzana.arefin.poly' },
   ];
@@ -32,21 +30,14 @@ const Hero = ({ darkMode }) => {
 
   return (
     <div className='relative overflow-hidden min-h-screen flex flex-col'>
-      <section
-        id='home'
-        data-aos-delay='250'
-        className='body-font z-10'
-      >
-        <div className='container mx-auto flex px-4 sm:px-8 lg:px-14
-        py-12 lg:py-32 flex-col lg:flex-row items-center justify-between
-        lg:mt-0 mt-14'>
+      <section id='home' data-aos-delay='250' className='body-font z-10'>
+        <div className='container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 sm:px-8 lg:px-14 py-12 lg:py-20 mt-8 lg:mt-16'>
 
           {/* LEFT CONTENT */}
-          <div className='lg:w-1/2 w-full flex flex-col items-center
-          lg:items-start text-center lg:text-left mb-12 lg:mb-0'>
+          <div className='lg:w-1/2 w-full flex flex-col items-center lg:items-end text-center lg:text-right mb-8 lg:mb-0 lg:order-1'>
 
             {/* Social Icons */}
-            <div className='flex justify-center lg:justify-start gap-4 sm:gap-6 mb-6 sm:mb-7 w-full'>
+            <div className='flex justify-center lg:justify-end gap-2 sm:gap-4 mb-6 sm:mb-7 w-full'>
               {socialIcons.map((social, index) => (
                 <a
                   key={index}
@@ -76,28 +67,26 @@ const Hero = ({ darkMode }) => {
 
             {/* Paragraph */}
             <p
-              className={`mb-6 sm:mb-8 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}
+              className={`mb-4 sm:mb-5 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}
               data-aos='fade-up'
               data-aos-delay='600'
             >
               Web Designer & WordPress Developer  <br />
-
-I build modern, responsive, and high-converting websites.
+              I build modern, responsive, and high-converting websites.
             </p>
+
             <p className="mt-4 text-sm sm:text-base text-gray-600 dark:text-gray-300">
              <a href="mailto:arefin683467@gmail.com" className="hover:underline">arefin683467@gmail.com</a> | 
              <a href="tel:+8801881-039182" className="hover:underline">+88 01881-039182</a>
-             </p>
+            </p>
 
-
-            {/* ✅ BUTTONS — FIXED POSITION */}
+            {/* BUTTONS */}
             <div className='w-full pt-4 sm:pt-6'>
               <div
-                className='flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4'
+                className='flex flex-col sm:flex-row justify-center lg:justify-end gap-2 sm:gap-3'
                 data-aos='fade-up'
                 data-aos-delay='700'
               >
-
                 <a href={CV} download className='w-full sm:w-auto'>
                   <button
                     className='w-full sm:w-auto inline-flex items-center justify-center
@@ -121,15 +110,13 @@ I build modern, responsive, and high-converting websites.
                     Contact Me
                   </button>
                 </a>
-
               </div>
             </div>
-
           </div>
 
           {/* RIGHT IMAGE */}
           <div
-            className='lg:w-1/2 w-full max-w-md lg:max-w-lg mt-8 lg:mt-0 flex justify-center'
+            className='lg:w-1/2 w-full max-w-md lg:max-w-lg mt-4 lg:mt-0 flex justify-center lg:order-2'
             data-aos='fade-left'
             data-aos-delay='400'
           >
