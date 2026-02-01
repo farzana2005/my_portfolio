@@ -62,8 +62,8 @@ const Hero = ({ darkMode }) => {
 
             {/* Paragraph */}
             <p className={`leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}>
-              Web Designer & WordPress Developer  <br />
-              I build modern, responsive, and high-converting websites.
+              Web Designer & WordPress Developer  
+                 I build modern, responsive, and high-converting websites.
             </p>
 
             {/* Contact Info */}
