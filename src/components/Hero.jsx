@@ -1,4 +1,4 @@
-import instagram from '../assets/instagram.png'
+
 import github from '../assets/github.png'
 import facebook from '../assets/facebook.png'
 import CV from '../assets/CV.pdf'
@@ -9,7 +9,7 @@ import hi from '../assets/hi.png'
 const Hero = ({ darkMode }) => {
 
   const socialIcons = [
-    { icon: instagram, alt: 'Instagram',  url:'https://www.instagram.com/farzana_arefin_poly?igsh=MTZhNG5qcmsxMHhkZQ=='},
+   
     { icon: github, alt: 'github', url: 'https://github.com/farzana2005' },
     { icon: facebook, alt: 'facebook', url: 'https://www.facebook.com/farzana.arefin.poly' },
   ];
